@@ -1,0 +1,52 @@
+/* Главаня страница: Шапка сайта*/
+
+.welcome-to-sedona {
+    background-image: url("../img/backgound/index-bg.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 485px;   
+}
+
+/* Приемущества*/
+.true-town {
+    background-image: url("../img/photo/Advantages-1.jpg");
+    background-repeat: no-repeat; 
+    width: 800px;
+    height: 384px;
+}
+
+.devils-bridge {
+    background-image: url("../img/photo/Advantages-2.jpg");
+    background-repeat: no-repeat; 
+    width: 800px;
+    height: 384px;
+}
+
+/* Рассылка*/
+.mailing {
+    background-image: url("../img/backgound/mailing-bg.jpg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 411px;
+}
+
+/* Каталог: Шапка сайта*/
+
+.inner-header{
+    background-image: url("../img/background/catalog-bg.jpg");
+    background-repeat: no-repeat;
+    width: 1199px;
+    
+
+}
+
+.hotels {
+    margin-top:50px;
+}
+
+.search {
+    margin-top:50px;
+    border: 1px solid gray;
+    width: 1057px;
+    height: 48px;
+}
