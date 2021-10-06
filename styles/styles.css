@@ -1,30 +1,27 @@
 /* Главаня страница: Шапка сайта*/
-
-.welcome-to-sedona {
-    background-image: url("../img/backgound/index-bg.jpg");
+.container {
+width:1200px;
+}
+.welcome-block{
+    background-image: url("../img/background/index-bg.jpg");
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 485px;   
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 /* Приемущества*/
 .true-town {
-    background-image: url("../img/photo/Advantages-1.jpg");
-    background-repeat: no-repeat; 
-    width: 800px;
-    height: 384px;
+    background-image: url("../img/background/true-town-bg.png"); 
 }
 
 .devils-bridge {
-    background-image: url("../img/photo/Advantages-2.jpg");
-    background-repeat: no-repeat; 
-    width: 800px;
-    height: 384px;
+    background-image: url("../img/background/devils-bridge-bg.png");
+   
 }
 
 /* Рассылка*/
 .mailing {
-    background-image: url("../img/backgound/mailing-bg.jpg");
+    background-image: url("../img/background/mailing-bg.jpg");
     background-repeat: no-repeat;
     width: 1200px;
     height: 411px;
@@ -34,19 +31,7 @@
 
 .inner-header{
     background-image: url("../img/background/catalog-bg.jpg");
-    background-repeat: no-repeat;
-    width: 1199px;
-    
-
+    background-repeat: no-repeat;    
 }
 
-.hotels {
-    margin-top:50px;
-}
 
-.search {
-    margin-top:50px;
-    border: 1px solid gray;
-    width: 1057px;
-    height: 48px;
-}
