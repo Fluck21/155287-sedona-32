@@ -31,7 +31,7 @@
 }
 
 body {
-    font-family: "PT Sans", "sans-serif", "Arial";
+    font-family: "PT Sans", "Arial", "sans-serif", ;
     font-size: 18px;
     line-height: 21px;
 }
@@ -40,7 +40,7 @@ body {
 
 /*Навигация*/
 .navigation-link {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 25,88px;
@@ -55,9 +55,9 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20,7px;
-    color: ;
+    color: #FFFFFF;
     text-align: center;
-    background-color: #fff;
+    background-color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -76,7 +76,7 @@ width:1200px;
 
 /* Блок приветствия*/
 .small-town {
-    font-family: "PT Sans";
+    font-family: inherit;;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -86,7 +86,7 @@ width:1200px;
 }
 
 .five-reasons {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 22px;
     line-height: 36px;
@@ -96,24 +96,24 @@ width:1200px;
 
 /* Приемущества*/
 .advantages-title {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    color: ;
+    color:#FFFFFF;
     text-transform: uppercase;
 }
 
 .advantages-description {
-    font-family: "PT Sans";
+    font-family:  inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: ;
+    color:#FFFFFF;
 }
 
 .advantages-title {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -132,7 +132,7 @@ width:1200px;
 
 /* Поиск гостиницы*/
 .search-hotel-question {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -142,7 +142,7 @@ width:1200px;
 }
 
 .travel-dates {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -151,11 +151,11 @@ width:1200px;
 }
 
 .search-hotel-button {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
-    color: ;
+    color: #FFFFFF;
     text-align: center;
     text-transform: uppercase;
 }
@@ -169,7 +169,7 @@ width:1200px;
 }
 
 .mailing-tittle {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -179,7 +179,7 @@ width:1200px;
 }
 
 .mailing-description {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -188,7 +188,7 @@ width:1200px;
 }
 
 .email-subsription {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
@@ -197,25 +197,25 @@ width:1200px;
  
 
 .button-subscription {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    color: ;
+    color: #FFFFFF ;
     text-align: center;
     text-transform: uppercase;
 }
 
 /* Каталог: Фильтр отелей*/
 
-.test{
+.hotel-filter{
     background-image: url("../img/background/catalog-bg.jpg");
     background-repeat: no-repeat;   
     ;
 }
 
 .hotel-filter-title {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 60px;
     line-height: 77,64px;
@@ -223,7 +223,7 @@ width:1200px;
 }
 
 .breadcrumbs-link-hotels {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 20,7px;
@@ -232,7 +232,7 @@ width:1200px;
 }
 
 .hotel-filter-tittle {
-    font-family: "PT Sans";
+    font-family:  inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 25,88px;
@@ -240,7 +240,7 @@ width:1200px;
 }
 
 .services-label {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23,29px;
@@ -248,23 +248,23 @@ width:1200px;
 }
 
 .button-apply {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 25,88px;
-    color: ;
+    color:#FFFFFF;
 }
 
 .button-reset {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23,29px;
-    color: ;
+    color:#FFFFFF ;
 }
 
 .hotels-found {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 30px;
     line-height: 38,82px;
@@ -272,7 +272,7 @@ width:1200px;
 }
 
 .select-control {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23,29px;
@@ -282,7 +282,7 @@ width:1200px;
 </* Каталог: Каталог гостинец */>
 
 .hotel-card-title {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 24px;
     line-height: 31,06px;
@@ -290,7 +290,7 @@ width:1200px;
 }
 
 .hotel-card-price {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 23,29px;
@@ -298,7 +298,7 @@ width:1200px;
 }
 
 .hotel-card-rating {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 20,7px;
@@ -306,23 +306,23 @@ width:1200px;
 }
 
 .button-card {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 20,7px;
-    color: ;
+    color: #FFFFFF ;
 }
 
 .button-download-more {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 28,88px;
-    color: ;
+    color: #FFFFFF;
 }
 
 .hotels-on-page {
-    font-family: PT Sans;
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
