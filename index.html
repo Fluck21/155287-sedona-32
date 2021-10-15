@@ -23,8 +23,8 @@
             </ul>
         
             <div class="header-logo">
-                <a href="#"  class="logo">
-                    <img class="logo" src="img/Logo/logo.png" width="138" height="70"  alt="Логотип Седоны">
+                <a href="#"  class="logo-header">
+                    <img class="logo-header" src="img/Logo/logo.png" width="138" height="70"  alt="Логотип Седоны">
                 </a>
               </div>
         
@@ -48,9 +48,11 @@
         </nav>
   </header>
 
+<main class="main">
+  
 <!--Приветственный экран-->
-<h1 class="visually-hidden">Sedona</h1>
-
+<section>
+    <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <div class="welcome-screen">
             <div class="welcome-block">
               <div class="welcome-title">
@@ -63,11 +65,13 @@
                 <p class="five-reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
         </div>
+</section>
 
 <!--Блок приемуществ-->
-<h2 class="visually-hidden">Приемущества</h2>
+<section>
+  <h2 class="visually-hidden">Преимущества</h2>
 
-<ul class="advantages-container">   
+  <ul class="advantages-container">   
     <ul class="true-town-container">
         <li class="true-town-container-text-blue">
             <p class="advantages-title">
@@ -84,7 +88,7 @@
             <img src="img/photo/advantages-one.jpg">
         </li>
       </ul>    
-</ul>
+  </ul>
 
 <ul class="advantages-container-two">
       <ul class="advantages-item ">
@@ -135,50 +139,48 @@
     </ul>    
 </ul>
 
-
-
 <ul class="advantages-container-three">
+      <ul class="advantages-item advantages-item-house">
+        <li class="true-town-container-text">
+            <p class="advantages-title">
+              НЕБОЛЬШАЯ ПЛОЩАДЬ
+            </p>
+              <span class="advantages-description-one">– №3 –</span>
+            <p class="advantages-description">
+              Все достопримечательности находятся очень близко
+            </p>
+        </li>
+      </ul>
 
-    <ul class="advantages-item advantages-item-house">
-      <li class="true-town-container-text">
-          <p class="advantages-title">
-            НЕБОЛЬШАЯ ПЛОЩАДЬ
-          </p>
-          <span class="advantages-description-one">– №3 –</span>
-          <p class="advantages-description">
-            Все достопримечательности находятся очень близко
-        </p>
-      </li>
-    </ul>
+      <ul class="advantages-item ">
+        <li class="true-town-container-text">
+            <p class="advantages-title">
+              КРАСИВАЯ ДОРОГА
+            </p>
+              <span class="advantages-description-one">– №4 –</span>
+            <p class="advantages-description">
+            Ехать в Седону из Лас-вегаса совсем не скучно!
+            </p>
+        </li>
+      </ul>
 
-    <ul class="advantages-item ">
-      <li class="true-town-container-text">
-        <p class="advantages-title">
-          КРАСИВАЯ ДОРОГА
-        </p>
-        <span class="advantages-description-one">– №4 –</span>
-        <p class="advantages-description">
-          Ехать в Седону из Лас-вегаса совсем не скучно!
-      </p>
-    </li>
-  </ul>
-
-  <ul class="advantages-item ">
-    <li class="true-town-container-text">
-      <p class="advantages-title">
-        МАЛО ТУРИСТОВ
-      </p>
-      <span class="advantages-description-one">– №5 –</span>
-      <p class="advantages-description">
-        Большинство едет в Гранд Каньон и толпится там
-    </p>
-  </li>
+      <ul class="advantages-item ">
+        <li class="true-town-container-text">
+            <p class="advantages-title">
+              МАЛО ТУРИСТОВ
+            </p>
+              <span class="advantages-description-one">– №5 –</span>
+            <p class="advantages-description">
+            Большинство едет в Гранд Каньон и толпится там
+            </p>
+        </li>
+      </ul>         
 </ul>
-            
-</ul>
-
+</section>
  
 <!--Поиск гостиницы-->
+<section>
+  <h2 class="visually-hidden">Поиск гостиницы</h2>
         <div class="search-hotel">
           <div class="search-hotel-container">
             <h3 class="search-hotel-question">ЗАИНТЕРЕСОВАЛИСЬ?</h3>
@@ -188,8 +190,10 @@
             </div>
           </div>
         </div>
-    
+</section>    
 <!--Рассылка-->
+<section>
+  <h2 class="visually-hidden">Почтовая рассылка</h2>
         <div class="mailing-main">
           <div class="mailing-container">
             <h3 class="mailing-tittle">Подпишитесь на рассылку</h3>
@@ -200,41 +204,36 @@
             </form>
           </div>
         </div>   
-   
+</section>  
+
+</main> 
 
 <!--Подвал сайта-->
 
-<footer class="page-footer">
-    <div class="footer-social-container">
-        <div class="social-container">
-            <div class="footer-social-item-twitter">
-                <a class="button" href="#">
-                    <img src="/img/icon/social-twitter.svg" alt="Твиттер">
-                </a>
+ <footer class="page-footer">
+  <section class="footer-social">
+      <div class="footer-social-container">
+          <div class="social-container">
+              <a href="#" class="footer-social-item-twitter"></a>
+              <a href="#" class="footer-social-item-facebook"></a>
+              <a href="#" class="footer-social-item-youtube"></a>
+          </div> 
+    
+          <div class="phone-number">
+            <div class="phone">
+              <p> 
+                <a class="phone" href="tel:0955414642">+7 (812) 812-12-12</a>
+              </p>
             </div>
-        <div class="footer-social-item-facebook">
-            <a class="button" href="#">
-                <img src="/img/icon/social-facebook.svg" alt="Фэйсбук">
-            </a>
-        </div>
-        <div class="footer-social-item-youtube">
-            <a class="button" href="#">
-                <img src="/img/icon/social-youtube.svg" alt="Ютуб">
-            </a>
-        </div>
-      </div>  
-      <div class="phone-number">
-          <div class="phone">
-              <p class="" >+7 (812) 812-12-12</p>
-          </div>
-      </div> 
-      <div class="footer-logo">      
-            <a href="#"  class="logo">
-                <img class="logo" src="img/background/html-academy-logo.png" alt="Логотип Html academy">
-            </a>
-      </div>    
-    </div>
-</footer>   
-      
+          </div> 
+             
+          <div class="footer-logo">
+            <a href="#"  class="logo"></a>
+          </div> 
+      </div>
+  </section>
+  </footer>   
+
     </body>
+
 </html>

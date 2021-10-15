@@ -13,6 +13,10 @@ body {
   line-height: 21px;
 }
 
+.main {
+  width: 1200px;
+}
+
 /* Подключение шрифтов*/
 @font-face {
   font-family: "PT Sans";
@@ -118,7 +122,6 @@ body {
 
 /* Поиск гостиницы*/
 .search-hotel-question {
-  font-family: inherit;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -128,7 +131,6 @@ body {
 }
 
 .travel-dates {
-  font-family: inherit;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -150,7 +152,6 @@ body {
 /* E-mail рассылка*/
 
 .mailing-tittle {
-  font-family: inherit;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -159,8 +160,16 @@ body {
   text-transform: uppercase;
 }
 
+.mailing-tittle-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .mailing-description {
-  font-family: inherit;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -168,8 +177,15 @@ body {
   text-align: center;
 }
 
+.mailing-description-catalog {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  text-align: center;
+}
+
 .email-subsription {
-  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -500,7 +516,6 @@ body {
   padding-right: 0;
   margin-top: 0px;
   margin-bottom: 0px;
-  
 }
 
 .advantages-item,
@@ -514,21 +529,18 @@ body {
   outline: 1px solid black;
   list-style: none;
   padding: 0;
-  
 }
 
 .house-item {
   display: flex;
   flex-direction: column;
   margin-top: 89px;
-  
 }
 
 .meal-item {
   display: flex;
   flex-direction: column;
   margin-top: 89px;
-
 }
 
 .souvenirs-item {
@@ -584,6 +596,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.mailing-main-catalog {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1200px;
+  background-color: #ffffff;
+}
+
 .mailing-container {
   margin: 91px;
 }
@@ -609,6 +629,8 @@ body {
  outline: 1px solid black;
 }
 
+
+
 .social-container {
   display: flex;
 }
@@ -620,6 +642,7 @@ body {
   margin-right: 29px;
   margin-top: 52px;
   margin-bottom: 53px;
+  background-image: url("../img/icon/social-twitter.svg");
 }
 
 .footer-social-item-facebook {
@@ -628,6 +651,7 @@ body {
   margin-right: 29px;
   margin-top: 52px;
   margin-bottom: 53px;
+  background-image: url("../img/icon/social-facebook.svg");
 }
 
 .footer-social-item-youtube {
@@ -635,7 +659,7 @@ body {
   height: 16px;
   margin-top: 52px;
   margin-right: 29px;
-  
+  background-image: url("../img/icon/social-youtube.svg");
 }
 
 .phone-number {
@@ -646,22 +670,157 @@ body {
 
 .phone {
   padding-left: auto;
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;  
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .footer-logo {
-  padding-top: 44px;
-  padding-left: 53px;
+  display: flex;
+}
+
+.logo {
+  margin-top: 44px;
+  width: 115px;
+  height: 34px;
+  background-image: url("../img/background/html-academy-logo.png");
+  background-repeat: no-repeat;
 }
 
 /*Страница каталога: фильтер отелей*/
-.hotel-filter-container{
+
+.hotel-filter-container {
   background-image: url(../img/background/catalog-bg.jpg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   width: 1200px;
+  outline: 1px solid rgba(63, 68, 75, 0.5);
+  outline-offset: -5px;
 }
+
+.hotel-filter {
+  margin: 0px;
+  padding: 0px;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  width: 115px;
+  justify-content: center;
+}
+
+.infrastructure,
+.catalog-filter-item {
+  display: flex;
+  list-style-type: none;
+}
+
+/*Страница каталога: сортировка отелей*/
+
+.sorting-hotels-container {
+  display: flex;
+  width: 1200px;
+  height: 100px;
+  outline: 1px solid red;
+  outline-offset: -5px;
+  margin-top: 44px;
+} 
+
+.sorting-hotels-form {
+  padding-top: 44px;
+  padding-left: 40px;
+  padding-right: 0 auto;
+  width: 1200px;
+  outline: 1px solid red;
+  outline-offset: -5px;
+}
+
+/*Страница каталога: каталог гостинец*/
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  width: 1056px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.hotel-card {
+  list-style-type: none;
+  padding-top: 44px;
+  margin-bottom: 0px;
+  outline: 1px solid red;
+  outline-offset: -5px;
+}
+
+.hotel-item {
+  outline: 1px solid red;
+  outline-offset: -5px;
+}
+
+.button-download {
+  margin-top: 31px;
+  padding-bottom: 31px;
+}
+
+.button-download-more {
+  width: 625px;
+  height: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
