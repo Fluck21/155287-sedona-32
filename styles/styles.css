@@ -13,6 +13,10 @@ body {
   line-height: 21px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main {
   width: 1200px;
 }
@@ -205,11 +209,25 @@ body {
 
 /* Подключение шрифтов: Фильтр отелей*/
 
+.hotels-of-sedona {
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+}
+
 .hotel-filter-title {
   font-family: inherit;
   font-weight: 700;
   font-size: 60px;
   line-height: 77, 64px;
+  color: #ffffff;
+}
+
+.hotel-filter-tittle-type {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25, 88px;
   color: #ffffff;
 }
 
@@ -230,7 +248,8 @@ body {
   color: #ffffff;
 }
 
-.services-label {
+.services-label,
+.housing-label {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
@@ -255,11 +274,11 @@ body {
 }
 
 .hotels-found {
-  font-family: inherit;
   font-weight: 700;
   font-size: 30px;
   line-height: 38, 82px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .select-control {
@@ -692,86 +711,282 @@ body {
 
 /*Страница каталога: фильтер отелей*/
 
-.hotel-filter-container {
+.hotel-filter {
+  display: flex;
+  flex-direction: column;
   background-image: url(../img/background/catalog-bg.jpg);
   background-repeat: no-repeat;
   width: 1200px;
-  outline: 1px solid rgba(63, 68, 75, 0.5);
-  outline-offset: -5px;
+  outline: 1px solid rgba(4, 48, 245, 0.5);
+  outline-offset: -1px;
 }
 
-.hotel-filter {
-  margin: 0px;
-  padding: 0px;
+.hotels-of-sedona {
+  margin-bottom: 5px;
+  margin-left: 66px;
 }
-
 .breadcrumbs {
   display: flex;
   list-style-type: none;
   width: 115px;
-  justify-content: center;
+  margin-bottom: 45px;
+  padding-left: 0px;
+  margin-left: 66px;
 }
 
-.infrastructure,
-.catalog-filter-item {
+.filter-form {
   display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  margin-top: 50px;
+  margin-bottom: 84px;
+}
+
+.catalog-filter-list {
   list-style-type: none;
 }
 
-/*Страница каталога: сортировка отелей*/
-
-.sorting-hotels-container {
-  display: flex;
-  width: 1200px;
-  height: 100px;
-  outline: 1px solid red;
-  outline-offset: -5px;
-  margin-top: 44px;
-} 
-
-.sorting-hotels-form {
-  padding-top: 44px;
-  padding-left: 40px;
-  padding-right: 0 auto;
-  width: 1200px;
-  outline: 1px solid red;
-  outline-offset: -5px;
+.catalog-filter-group-inf,
+.catalog-filter-group-type,
+.catalog-filter-group-cost {
+  padding: 0px;
+  width: 256px;
 }
 
-/*Страница каталога: каталог гостинец*/
 
-.hotels {
+/*Страница каталога: сортировка гостиниц*/
+
+.sorting-hotels {
+  display: flex;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sorting-type{
+  display: flex;
+  width: 1057px;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+  align-items: center;
+}
+
+.hotels-found{
+  width: 350px;
+  height: 39px;
+}
+
+.select-control {
+  width: 287x;
+  height: 48px;
+  margin-left: 180px;
+}
+ 
+.button-cards {
+  background-image: url("../img/icon/sorting-item-1.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  margin-left: 180px;
+  padding-right: 8px;
+}
+
+.button-preview {
+  background-image: url("../img/icon/sorting-item-2.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  padding-right: 8px ;
+}
+
+.button-list {
+  background-image: url("../img/icon/sorting-item-3.svg");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+}
+
+
+/*Страница каталога: каталог гостиниц*/
+
+.search-container {
   display: flex;
   flex-direction: column;
+  width: 1200px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.result-item {
+  display: flex;
   width: 1056px;
+  height: 123px;
   justify-content: center;
-  margin: 0 auto;
 }
 
+.result-item{
+  margin-left: 70px;
+  padding-top: 58px;
+}
+ 
 
-.hotel-card {
+.result-description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 730px;
+  padding-left: 36px;
+}
+
+.result-description-title {
+  margin: 0px;
+  width: 750px;
+  height: 31px;
+}
+
+.hotel,
+.price {
+  width: 79px;
+  height: 23px;
+}
+
+.more{
+  width: 151px;
+  height: 37px;
+  padding-top: 48px;
+}
+
+.favourites{
+  width: 160px;
+  height: 37px;
+  padding-top: 48px;
+} 
+
+.details-item,
+.reserve-item,
+.rating-item {
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
-  padding-top: 44px;
-  margin-bottom: 0px;
-  outline: 1px solid red;
-  outline-offset: -5px;
 }
 
-.hotel-item {
-  outline: 1px solid red;
-  outline-offset: -5px;
+.details-item {
+  width: 151px;
+  height: 75px;
+  margin-bottom: 100px;
 }
 
-.button-download {
-  margin-top: 31px;
-  padding-bottom: 31px;
+.reserve-item {
+  width: 170px;
+  height:75px;
+  margin-left: 8px;
 }
 
-.button-download-more {
+.rating-item {
+  width: 200;
+  height: 120px;
+}
+
+.rating-sum {
+  padding-top: 80px;
+}
+
+.icon-star {
+  padding-left: 35px;
+}
+
+.rating-sum {
+  padding-left: 15px;
+}
+
+ .button-download {
+  display: flex;
+  margin-top: 60px;
   width: 625px;
   height: 55px;
+  margin-left: 288px;
+  margin-right: 287px;
+  margin-bottom: 31px;
+  background-color: #83B3D3;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 
+/*Пагинация*/
+.pagination-container {
+  display: flex;
+  width: 1200px;
+  height: 56px;
+  margin-top: 36px;
+  margin-right: 0px;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  }
+
+.pagination-item {
+    margin-right: 7px;
+}
+
+.pagination-item
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 44px;
+  padding: 14px 20px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color:  #83B3D3;
+  text-decoration: none;
+}
+
+.pagination-current {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 44px;
+  padding: 14px 20px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #F2F2F2;;
+  text-decoration: none;
+}
+
+.pagination-form {
+  margin-left: auto;
+  width: 386;
+  height: 48px;
+}
+
+.pagination-found {
+  width: 175;
+  height: 23px;
+  margin-right: 51px;
+}
+
+.select {
+  width: 160px;
+  height: 48px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.mailing-main-catalog {
+  margin-top: 89px;
+  margin-bottom: 135px;
+}
 
 
 
