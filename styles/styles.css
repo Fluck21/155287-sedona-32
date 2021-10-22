@@ -1064,33 +1064,19 @@ a {
 }
 
 .icon-star {
+  width: 91px;
+  height: 17;
   display: flex;
+  justify-content: center;
   margin-top: 4px;
 }
 
-.star-4 {
-  width: 91px;
+.star {
+  width: 18px;
   height: 17px;
-  background-image: url("../img/icon/star-4.svg");
+  background-image: url("../img/icon/star-one.svg");
   background-repeat: no-repeat;
 }
-
-.star-3 {
-  justify-self: center;
-  width: 91px;
-  height: 17px;
-  background-image: url("../img/icon/star-3.svg");
-  background-repeat: no-repeat;
-}
-
-.star-2 {
-  justify-self: center;
-  width: 91px;
-  height: 17px;
-  background-image: url("../img/icon/star-2.svg");
-  background-repeat: no-repeat;
-}
-
 
  .button-download {
   display: flex;
