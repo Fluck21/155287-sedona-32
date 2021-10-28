@@ -6,16 +6,27 @@ html {
 body {
   margin: 0;
   display: flex;
+  width: 1200px;
   min-height: 100%;
   flex-direction: column;
   font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 18px;
   line-height: 21px;
-  align-items: center;
+  outline: 1px solid rgba(255, 105, 78, 0.5);
+  outline-offset: -1px;
+  /*align-items: center;*/
 }
 
 a {
   text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+fieldset {
+  border: 0 none;
 }
 
 .main {
@@ -76,7 +87,9 @@ a {
   text-decoration: none;
 }
 
-.navigation-button {
+.navigation-button,
+.button-more,
+.button-favourites {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -84,6 +97,7 @@ a {
   color: #ffffff;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Шрифты: Блок приветствия*/
@@ -231,21 +245,17 @@ a {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #83B3D3;
 }
 
 /* Подключение шрифтов: Фильтр отелей*/
 
-.hotels-of-sedona {
+.hotels-sedona {
   font-weight: 700;
   font-size: 60px;
   color: #ffffff;
 }
 
-.hotel-filter-title {
+.hotel-filter-title{
   font-family: inherit;
   font-weight: 700;
   font-size: 60px;
@@ -253,13 +263,17 @@ a {
   color: #ffffff;
 }
 
-.hotel-filter-tittle-type {
+.hotel-filter-tittle-type,
+.hotel-filter-tittle-inf,
+.catalog-filter-group-coast,
+.filter-range-title {
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
-  line-height: 25, 88px;
+  line-height: 25.88px;
   color: #ffffff;
 }
+
 
 .breadcrumbs-link-hotels {
   font-family: inherit;
@@ -274,7 +288,7 @@ a {
   font-family: inherit;
   font-weight: 700;
   font-size: 20px;
-  line-height: 25, 88px;
+  line-height: 25.88px;
   color: #ffffff;
 }
 
@@ -291,7 +305,7 @@ a {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 25, 88px;
+  line-height: 20px;
   color: #ffffff;
 }
 
@@ -299,7 +313,7 @@ a {
   font-family: inherit;
   font-weight: 400;
   font-size: 18px;
-  line-height: 23, 29px;
+  line-height: 23px;
   color: #ffffff;
 }
 
@@ -370,6 +384,17 @@ a {
   color: #333333;
 }
 
+
+.button-favourites {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* Подключение сеток*/
 
 .main-container {
@@ -437,7 +462,7 @@ a {
   background-color: #756257;
   width: 160px;
   height: 37px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .i-want-to {
@@ -500,6 +525,7 @@ a {
 .text-container {
   display: flex;
   flex-direction: column;
+  height: 282px;
 }
 
 .small-town {
@@ -523,13 +549,13 @@ a {
   list-style: none;
 	margin: 0;
   padding: 0;
-  list-style: none;
 }
 
 .true-town-container {
   display: flex;
   width: 1200;
   padding: 0;
+  margin: 0;
 }
 
 .true-town-container-text {
@@ -630,6 +656,7 @@ a {
   padding-right: 0;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin: 0;
 }
 
 .advantages-item,
@@ -643,6 +670,7 @@ a {
   outline: 1px solid black;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .house-item {
@@ -670,6 +698,7 @@ a {
   margin-left: 0px;
   outline: 1px solid black;
   padding: 0;
+  margin: 0;
 }
 
 .advantages-container-three {
@@ -710,36 +739,21 @@ a {
   background-repeat: no-repeat;
 }
 
-.mailing-main-catalog {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 1200px;
-  background-color: #ffffff;
-}
 
-.mailing-container {
-  margin: 87px;
-}
-
-.email-subsription {
-  width: 600px;
-  height: 61px;
-  border-radius: 10px;
-}
-
-.button-subscription {
-  width: 200px;
-  height: 61px;
-  border-radius: 10px;
-}
 
 /*Сетки: подвал сайта*/
+
+.page-footer {
+  width: 1200px;
+  min-height: 120px;
+}
 
 .footer-social-container {
  display: flex;
  width: 1200px;
+ min-height: 120px;
  text-align: center;
+ 
 }
 
 .social-container {
@@ -774,19 +788,25 @@ a {
 }
 
 .phone-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 720px;
-  margin-top: 10px;
+  margin-top: 60px;
 }
 
 .phone {
-  padding-left: auto;
+  display: flex;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;  
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  align-items: flex-end;
+  
+  margin-bottom: 25px;
 }
 
 .footer-logo {
@@ -809,14 +829,20 @@ a {
   background-image: url(../img/background/catalog-bg.jpg);
   background-repeat: no-repeat;
   width: 1200px;
-  outline: 1px solid rgba(4, 48, 245, 0.5);
-  outline-offset: -1px;
 }
 
 .hotels-of-sedona {
-  margin-bottom: 5px;
-  margin-left: 66px;
+  display: flex;
+  width: 585px;
+  margin-top: 33px;
+  margin-left: 71px;
 }
+
+.hotels-sedona {
+  display: flex;
+  align-items: flex-start;
+}
+
 .breadcrumbs {
   display: flex;
   justify-content: space-between;
@@ -826,7 +852,8 @@ a {
   height: 21px;
   margin-bottom: 45px;
   padding-left: 0px;
-  margin-left: 66px;
+  margin-left: 73px;
+  margin-top: 15px;
 }
 
 .breadcrumbs-item-home {
@@ -836,7 +863,6 @@ a {
   background-repeat: no-repeat;
 }
   
-
 .breadcrumbs-item-pointer {
   width: 5px;
   height: 8px;
@@ -850,26 +876,150 @@ a {
   line-height: 21px;
 }
 
-
 .filter-form {
   display: flex;
-  justify-content: space-around;
   width: 1200px;
-  margin-top: 50px;
   margin-bottom: 84px;
 }
 
+.catalog-filter-group-inf {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  padding: 0;
+  margin-left: 70px;
+}
+
+.hotel-filter-tittle-inf,
+.hotel-filter-tittle-type {
+  margin-bottom: 30px;
+}
+
+.catalog-filter-group-type {
+  width: 120px;
+  height: 150px;
+  display: flex;
+  padding: 0;
+  margin-left: 67px;
+}
+
 .catalog-filter-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
+  width: 150px;
 }
 
-.catalog-filter-group-inf,
-.catalog-filter-group-type,
-.catalog-filter-group-cost {
-  padding: 0px;
-  width: 256px;
+.catalog-filter-item {
+  display: flex;
+  width: 120px;
+  height: 23px;
+  margin-bottom: 13px;
 }
 
+/* Блок с ползунками*/
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  margin-left: 120px;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  padding-top: 3px;
+}
+
+.price-controls {
+  display: flex;
+  position: relative;
+  width: 287px;
+  height: 36px;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 2px;
+  height: 2px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+}
+
+.range-toggle-min {
+  left: 4px;
+}
+
+.range-toggle-max {
+  margin-left: 192px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-left: 55px;
+}
+
+.button-apply {
+  width: 160px;
+  height: 48px;
+  background-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.button-reset {
+  width: 160px;
+  height: 23px;
+  margin-top: 20px;
+  justify-content: center;
+  margin-left: 45px;
+  margin-right: 45px;
+}
 
 /*Страница каталога: сортировка гостиниц*/
 
@@ -931,144 +1081,146 @@ a {
 
 /*Страница каталога: каталог гостиниц*/
 
-.search-container {
-  display: flex;
-  flex-direction: column;
-  width: 1056px;
-  margin-left: 70px;
-  padding-right: 210px;
-  padding: 0px;
-}
-
-.result-item {
-  display: flex;
-  width: 1056px;
-  height: 123px;
-  justify-content: center;
-}
-
-.result-item{
-  margin-left: 60px;
-  padding-top: 58px;
-}
- 
-
-.result-description {
-  display: flex;
-  flex-wrap: wrap;
-  width: 730px;
-  padding-left: 36px;
-}
-
-.result-description-title {
+dd  {
   margin: 0px;
-  width: 750px;
-  height: 31px;
 }
 
-.hotel,
-.price {
-  width: 79px;
-  height: 23px;
+dl {
+  margin: 0px;
 }
 
-.more-button-container {
+h3 {
+  margin: 0px;
+}
+
+.catalog-container-amara,
+.catalog-container-desert,
+.catalog-container-villas,
+.catalog-container-green {
   display: flex;
-  width: 151px;
-  height: 37px;
-  margin-top: 28px;
-  justify-content: center;
-  align-items: center;
-  background-color: #756257;
-  border-radius: 4px;
+  width: 1056px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.favourites-button-container {
-  display: flex;
-  width: 160px;
-  height: 37px;
-  margin-top: 28px;
-  justify-content: center;
-  align-items: center;
-  background-color: #83B3D3;
-  border-radius: 4px;
-}
-
-.more {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
-.favourites{
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-  text-transform: uppercase;
+.card {
+  display: grid;
+  grid-template-columns: 180px 370px 506px;
+  grid-template-rows: 32px auto;
 } 
 
-.details-item,
-.reserve-item,
-.rating-item {
+.card-info-amara {
+  display: flex;
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
   margin: 0px;
-  padding: 0px;
-  list-style-type: none;
 }
 
-.details-item {
-  width: 151px;
-  height: 75px;
-  margin-bottom: 100px;
+
+.card, 
+.card-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
 }
 
-.reserve-item {
-  width: 170px;
-  height:75px;
+.card-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: start;
+}
+
+.card-info-amara {      
+  display: flex;
+  width: 255px;
+  height: 31px;
+  margin-left: 37px;
+  
+}
+
+.card-stats {
+  justify-self: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+
+.hotel {
+  width: 79px; 
+  height: 23px;
+  margin-left: 37px;
+}
+
+.price {
+  width: 79px; 
+  height: 23px; 
   margin-left: 8px;
 }
 
-.rating-item {
-  margin-right: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 120px;
-}
-
-.rating-sum {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  margin-top: 60px;
+.card-button-more {
+  display: flex; 
+  width: 151px; 
+  height: 37px;
   align-items: center;
   justify-content: center;
-  background-color: #F2F2F2;
+  margin-left: 37px;
+  background-color: #756257;
   border-radius: 4px;
+  margin-top: 25px;
 }
 
-.rating-button {
+.card-button-favourites {
   display: flex;
-  justify-content: center;
+  width: 160px; 
+  height: 37px;
   align-items: center;
-  width: 160px;
-  height: 18px;
+  justify-content: center;
+  margin-left: 8px; 
+  background-color: #83B3D3;
+  border-radius: 4px; 
+  margin-top: 25px;
+}
+
+.card-button-favourites-green {
+  display: flex;
+  width: 160px; 
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px; 
+  background-color: #7DB54F;
+  border-radius: 4px; 
+  margin-top: 25px;
+}
+
+.card-star {
+  display: grid;
+  justify-self: end;
+}
+
+.icon-star-villas {
+  justify-content: space-around;
+  display: flex;
+  width: 43px;
+  height: 17px;
+  margin-right: 55px;
+  margin-top: 5px;
 }
 
 .icon-star {
-  width: 91px;
-  height: 17;
+  justify-content: space-evenly;
   display: flex;
-  justify-content: center;
-  margin-top: 4px;
+  width: 91px;
+  height: 17px;
+  margin-right: 30px;
+  margin-top: 5px;
 }
 
 .star {
@@ -1078,7 +1230,25 @@ a {
   background-repeat: no-repeat;
 }
 
- .button-download {
+.card-button-rating {
+  display: flex;
+  width: 160px; 
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48px;
+  margin-left: 350px;
+  background-color: #F2F2F2;
+  border-radius: 4px; 
+}
+
+.catalog-container-desert,
+.catalog-container-villas,
+.catalog-container-green {
+  margin-top: 58px;
+}
+
+.button-download {
   display: flex;
   margin-top: 60px;
   width: 625px;
@@ -1095,24 +1265,34 @@ a {
 /*Пагинация*/
 .pagination-container {
   display: flex;
-  width: 1200px;
+  width: 1056px;
   height: 56px;
-  margin-top: 36px;
-  margin-right: 0px;
+  margin-top: 61px;
+  justify-content: center;
+  outline: 1px solid rgba(99, 255, 78, 0.5);
+  outline-offset: -1px;
+  margin-left: 72px;
 }
 
+
 .pagination {
+  height: 56px;
   display: flex;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
+  margin: 0;
   }
 
 .pagination-item {
-    margin-right: 7px;
+  display: flex;
+  width: 56px;
+  height: 56px;
+  margin-right: 7px;
+  align-items: center;
 }
 
-.pagination-item
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .pagination-link {
   display: block;
@@ -1141,15 +1321,18 @@ a {
 }
 
 .pagination-form {
+  display: flex;
   margin-left: auto;
   width: 386;
   height: 48px;
+  align-self: center;
 }
 
 .pagination-found {
   width: 175;
   height: 23px;
   margin-right: 51px;
+  align-self: center;
 }
 
 .select {
@@ -1159,9 +1342,54 @@ a {
   border-radius: 5px;
 }
 
+
+<!--Рассылка-->
+
 .mailing-main-catalog {
   display: flex;
-  margin-top: 89px;
-  margin-bottom: 135px;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 1200px;
+  background-color: #ffffff;
+  outline: 1px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -1px;
 }
+
+.mailing-container {
+  width: 800px;
+  margin-top: 89px;
+  margin-left: 200px;
+  margin-bottom: 137px;
+}
+
+.mailing-description-catalog {
+  margin-top: 15px;
+  margin-bottom: 26px;
+}
+.test {
+  width: 800px;
+}
+
+.mailing-form {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  width: 800px;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.mailing-form input {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0.5px solid grey;
+}
+
+.mailing-form button {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #83B3D3;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
