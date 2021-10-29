@@ -1,6 +1,8 @@
 /* Общие теги*/
 html {
+  display: flex;
   height: 100%;
+  justify-content: center;
 }
 
 body {
@@ -12,9 +14,6 @@ body {
   font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 18px;
   line-height: 21px;
-  outline: 1px solid rgba(255, 105, 78, 0.5);
-  outline-offset: -1px;
-  /*align-items: center;*/
 }
 
 a {
@@ -23,6 +22,7 @@ a {
 
 ul {
   padding: 0;
+  list-style-type: none;
 }
 
 fieldset {
@@ -31,6 +31,7 @@ fieldset {
 
 .main {
   width: 1200px;
+  
 
 }
 
@@ -98,6 +99,7 @@ fieldset {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border: none;
 }
 
 /* Шрифты: Блок приветствия*/
@@ -194,6 +196,7 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
   background-color: #756257;
+  border: none;
 }
 
 /* E-mail рассылка*/
@@ -245,6 +248,7 @@ fieldset {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  border: none;
 }
 
 /* Подключение шрифтов: Фильтр отелей*/
@@ -307,6 +311,7 @@ fieldset {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  border: none;
 }
 
 .button-reset {
@@ -315,6 +320,7 @@ fieldset {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+  border: none;
 }
 
 .hotels-found {
@@ -365,6 +371,7 @@ fieldset {
   font-size: 16px;
   line-height: 20, 7px;
   color: #ffffff;
+  border: none;
 }
 
 .button-download-more {
@@ -373,6 +380,7 @@ fieldset {
   font-size: 20px;
   line-height: 28, 88px;
   color: #ffffff;
+  border: none;
 }
 
 .hotels-on-page {
@@ -393,6 +401,7 @@ fieldset {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
+  border: none;
 }
 
 /* Подключение сеток*/
@@ -463,10 +472,12 @@ fieldset {
   width: 160px;
   height: 37px;
   border-radius: 5px;
+  border: none;
 }
 
 .i-want-to {
   margin-top: 8px;
+  border: none;
 }
 
 .navigation-item-main {
@@ -649,7 +660,6 @@ fieldset {
 /*Сетки: приемущества - второй блок*/
 
 .advantages-container-two {
-  outline: 1px solid black;
   display: flex;
   width: 1200px;
   padding-left: 0;
@@ -667,7 +677,6 @@ fieldset {
   height: 384px;
   width: 400px;
   text-align: center;
-  outline: 1px solid black;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -696,13 +705,11 @@ fieldset {
   width: 1200px;
   flex-direction: row-reverse;
   margin-left: 0px;
-  outline: 1px solid black;
   padding: 0;
   margin: 0;
 }
 
 .advantages-container-three {
-  outline: 1px solid black;
   display: flex;
   width: 1200px;
   margin: 0;
@@ -725,7 +732,9 @@ fieldset {
 .search-hotel-button {
   width: 575px;
   height: 60px;
+  border: none;
   border-radius: 10px;
+  border: none;
 }
 
 /*Сетки: рассылка*/
@@ -1010,6 +1019,7 @@ fieldset {
   height: 48px;
   background-color: #83B3D3;
   border-radius: 4px;
+  border: none;
 }
 
 .button-reset {
@@ -1019,6 +1029,7 @@ fieldset {
   justify-content: center;
   margin-left: 45px;
   margin-right: 45px;
+  border: none;
 }
 
 /*Страница каталога: сортировка гостиниц*/
@@ -1186,6 +1197,7 @@ h3 {
   background-color: #83B3D3;
   border-radius: 4px; 
   margin-top: 25px;
+  border: none;
 }
 
 .card-button-favourites-green {
@@ -1198,6 +1210,7 @@ h3 {
   background-color: #7DB54F;
   border-radius: 4px; 
   margin-top: 25px;
+  border: none;
 }
 
 .card-star {
@@ -1260,6 +1273,7 @@ h3 {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  border: none;
 }
 
 /*Пагинация*/
@@ -1269,8 +1283,6 @@ h3 {
   height: 56px;
   margin-top: 61px;
   justify-content: center;
-  outline: 1px solid rgba(99, 255, 78, 0.5);
-  outline-offset: -1px;
   margin-left: 72px;
 }
 
@@ -1351,8 +1363,6 @@ h3 {
   text-align: center;
   width: 1200px;
   background-color: #ffffff;
-  outline: 1px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -1px;
 }
 
 .mailing-container {
@@ -1391,5 +1401,6 @@ h3 {
   background-color: #83B3D3;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: none;
 }
 
