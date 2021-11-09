@@ -135,6 +135,7 @@ fieldset {
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+  outline: none;
 }
 
 /* Шрифты: Блок приветствия*/
@@ -626,6 +627,7 @@ fieldset {
   width: 160px;
   height: 37px;
   background: #756257;
+  border:none;
 }
 
 .button-want-cont:hover {
@@ -1626,6 +1628,7 @@ h3 {
   background-color: #756257;
   border-radius: 4px;
   margin-top: 25px;
+  border:none
 }
 
 .card-button-favourites {
