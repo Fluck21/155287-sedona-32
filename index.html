@@ -15,6 +15,7 @@
       <ul class="navigation-list">
         <li class="navigation-item navigation-item-main">
           <a class="navigation-item navigation-link" href="index.html">Главная</a>
+          <div class="underline visually-hidden"></div>
         </li>
         <li class="navigation-item navigation-item-about">
           <a class="navigation-item navigation-link" href="about">О Седоне</a>
@@ -135,7 +136,6 @@
                 <div class="trash-icon">
                   <svg class="trash-icon-svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-
                     <path
                       d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"
                       fill="black" />
@@ -148,7 +148,6 @@
                     <path
                       d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"
                       fill="black" />
-                    </g>
                   </svg>
                 </div>
               </div>
@@ -160,12 +159,11 @@
             </div>
           </div>
         </div>
-        </div>
       </li>
 
       <li>
         <button class="button-want-cont">
-          <span class="button-want">Подробнее</span>
+          <span class="button-want">Хочу сюда!</span>
         </button>
       </li>
 
@@ -177,6 +175,7 @@
     <!--Приветственный экран-->
     <section>
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+
       <div class="welcome-screen">
         <div class="welcome-block">
           <div class="welcome-title">
@@ -198,106 +197,137 @@
     <section>
       <h2 class="visually-hidden">Преимущества</h2>
 
-      <section class="advantages-container">
-        <ul class="true-town-container">
-          <li class="true-town-container-text-blue">
-            <p class="advantages-title-one">
+      <section class="advantages-container-one">
+        <ul class="block-one">
+          <li class="item-true-town">
+            <p>
               Настоящий <br>
               городок
             </p>
-            <span class="advantages-description-one">– №1 –</span>
-            <p class="advantages-description-two">
+          </li>
+          <li class="item-number-one">
+            <span>– №1 –</span>
+          </li>
+          <li class="block-one-description">
+            <p>
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </li>
-          <li class="true-town-container-photo">
-            <img src="img/photo/advantages-one.jpg" alt="улица Седоны">
-          </li>
         </ul>
+          <div class="true-town-container-photo">
+            <img src="img/photo/advantages-one.jpg" alt="улица Седоны">
+          </div>
       </section>
 
       <section class="advantages-container-two">
-        <ul class="advantages-item ">
+        <ul class="advantages-item block-two" >
           <li class="house-item">
             <span>
-              <img src="img/icon/icon-gift.svg" width="75" height="72" alt="Иконка жилья">
+              <img src="img/icon/icon-house.svg" width="75" height="72" alt="Иконка жилья">
             </span>
-            <p class="heading">Жильё</p>
-            <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="advantages-heading">
+            <p>Жильё</p>
+          </li>
+          <li class="advantages-description">
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
         </ul>
 
-        <ul class=" advantages-item">
+        <ul class="advantages-item">
           <li class="meal-item">
             <span>
               <img src="img/icon/icon-meal.svg" width="74" height="70" alt="Иконка еды">
             </span>
-            <p class="heading">Еда</p>
-            <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages-heading">
+            <p>Еда</p>
+          </li>
+          <li class="advantages-description">
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
 
-        <ul class="advantages-item advantages-item-souvenirs">
+        <ul class="advantages-item">
           <li class="souvenirs-item">
             <span>
               <img src="img/icon/icon-gift.svg" width="64" height="76" alt="Иконка сувениров">
             </span>
-            <p class="heading">Сувениры</p>
-            <p class="advantages-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
-        </ul>
-      </section>
-
-      <section class="advantages-container">
-        <ul class="true-town-container-two">
-          <li class="true-town-container-text-blue">
-            <p class="advantages-title-two">
-              Там есть<br>
-              мост дьявола
-            </p>
-            <span class="advantages-description-two">– №2 –</span>
-            <p class="advantages-description-two">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
+          <li class="advantages-heading">
+            <p>Сувениры</p>
           </li>
-          <li class="true-town-container-photo">
-            <img src="img/photo/advantages-two.jpg" alt="фотография каньона">
+          <li class="advantages-description">
+            <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
 
       <section class="advantages-container-three">
-        <ul class="advantages-item advantages-item-house">
-          <li class="true-town-container-text">
-            <p class="advantages-title">
-              НЕБОЛЬШАЯ ПЛОЩАДЬ
+        <ul class="block-three">
+          <li class="item-devils-bridge">
+            <p>
+              Там есть<br> мост дьявола
             </p>
-            <span class="advantages-number">– №3 –</span>
-            <p class="advantages-description advantages-description-3 ">
+          </li>
+          <li class="item-number">
+            <span>— №2 —</span>
+          </li>
+          <li class="block-three-description">
+            <p>
+              Да, по нему можно пройти! Если вы осмелитесь, разумеется
+            </p>
+          </li>
+        </ul>
+          <div class="true-town-container-photo">
+            <img src="img/photo/advantages-one.jpg" alt="улица Седоны">
+          </div>
+      </section>
+
+      <section class="advantages-container-four">
+        <ul class="advantages-item">
+          <li class="advantages-title">
+            <p>
+              Небольшая <br> площадь
+            </p>
+          </li>
+          <li class="advantages-number">
+            <span>– №3 –</span>
+          </li>
+          <li class="advantages-description">
+            <p>
               Все достопримечательности находятся очень близко
             </p>
           </li>
         </ul>
 
-        <ul class="advantages-item ">
-          <li class="true-town-container-text">
-            <p class="advantages-title">
-              КРАСИВАЯ ДОРОГА
+        <ul class="advantages-item">
+          <li class="advantages-title">
+            <p>
+              Красивая <br> дорога
             </p>
-            <span class="advantages-number">– №4 –</span>
-            <p class="advantages-description">
+          </li>
+          <li class="advantages-number">
+            <span>– №4 –</span>
+          </li>
+          <li class="advantages-description">
+            <p>
               Ехать в Седону из Лас-вегаса совсем не скучно!
             </p>
           </li>
         </ul>
 
-        <ul class="advantages-item ">
-          <li class="true-town-container-text">
-            <p class="advantages-title">
-              МАЛО ТУРИСТОВ
+        <ul class="advantages-item">
+          <li class="advantages-title">
+            <p>
+              Мало <br> туристов
             </p>
-            <span class="advantages-number">– №5 –</span>
-            <p class="advantages-description">
+          </li>
+          <li class="advantages-number">
+            <span>– №5 –</span>
+          </li>
+          <li class="advantages-description">
+            <p>
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </li>
