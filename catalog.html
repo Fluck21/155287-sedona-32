@@ -26,14 +26,14 @@
           </ul>
         </nav>
 
-        <div class="header-logo" tabindex="0">
-          <a href="#" class="#" tabindex="-1">
+        <div class="header-logo">
+          <a href="#" class="#">
             <img class="logo-header" src="img/logo/logo-of-sedona.png" width="138" height="70" alt="Логотип Седоны.">
           </a>
         </div>
 
         <ul class="nav-icon-list">
-          <li class="icon-cont" tabindex="0">
+          <li class="icon-cont">
             <svg class="icon-magnifier" width="18" height="18" viewbox="0 0 18 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
@@ -48,7 +48,7 @@
             </svg>
           </li>
 
-          <li class="icont-cont-like" tabindex="0">
+          <li class="icont-cont-like">
             <svg class="icon-heart" width="31" height="27" viewbox="0 0 31 27" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -66,7 +66,7 @@
               <div class="popover-container">
 
                 <!--Карточки отелей-->
-                <div class="block-one-desert" tabindex="0">
+                <div class="block-one-desert">
                   <div class="card-container-desert">
                     <img class="desert-icon-one" src="img/icon/desert-quil-48-48.jpg" alt="Иконка отеля.">
                     <span class="icon-name">Desert Quail Inn</span>
@@ -76,7 +76,7 @@
 
                 <!--Иконки: мусорное ведро-->
 
-                <div class="trash-icon-container-two" tabindex="0">
+                <div class="trash-icon-container-two">
                   <div class="trash-icon">
                     <svg class="trash-icon-svg" width="16" height="16" viewbox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +96,7 @@
                   </div>
                 </div>
 
-                <div class="block-one-villas" tabindex="0">
+                <div class="block-one-villas">
                   <div class="card-container-villas">
                     <img class="villas-icon-two" src="img/icon/villas-48-48.jpg" alt="Иконка отеля.">
                     <span class="icon-name-two">Villas at Poco Diablo</span>
@@ -104,7 +104,7 @@
                   </div>
                 </div>
 
-                <div class="trash-icon-container-one" tabindex="0">
+                <div class="trash-icon-container-one">
                   <div class="trash-icon">
                     <svg class="trash-icon-svg" width="16" height="16" viewbox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +121,7 @@
                 </div>
 
                 <!--Кнопка-->
-                <button class="button-in-favorites" tabindex="0" type="button">
+                <button class="button-in-favorites" type="button">
                   <span class="in-favorites">Все избранное</span>
                   <span class="visually-hidden">Кнопка все избранное.</span>
                 </button>
@@ -138,11 +138,12 @@
         </ul>
       </header>
 
-      <main class="main-catalog">
+
 
         <!--Фильтр отелей-->
 
         <section class="hotel-filter">
+
           <h1 class="visually-hidden">Фильтр отелей</h1>
           <div class="header-filter-form-container">
             <div class="hotels-of-sedona">
@@ -159,7 +160,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item-pointer">
-                <a class="breadcrumbs-link" href="#" tabindex="1">
+                <span class="breadcrumbs-link" href="#">
                   <svg class="breadcrumbs-item" width="5" height="8" viewbox="0 0 5 8" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g opacity="0.3" clip-path="url(#clip0_5:562)">
@@ -172,7 +173,7 @@
                       </clippath>
                     </defs>
                   </svg>
-                </a>
+                </span>
               </li>
               <li class="breadcrumbs-item breadcrumbs-item-hotels">
                 <a class="breadcrumbs-link-hotels breadcrumbs-link breadcrumbs-item" href="#">Гостиницы</a>
@@ -181,58 +182,64 @@
           </div>
 
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
+
             <fieldset class="catalog-filter-group-inf">
               <legend class="hotel-filter-tittle-inf">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
-                  <div class="ceckbox-cont" tabindex="0">
-                    <div class="ceckbox-tick"></div>
-                  </div>
-                  <input class="visually-hidden services-input" type="checkbox" name="pool" id="check" checked>
-                  <label class="services-label" for="check">Бассейн</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="services-label">Бассейн</span>
+                    </label>
                 </li>
 
                 <li class="catalog-filter-item">
-                  <div class="ceckbox-cont" tabindex="0">
-                    <div class="ceckbox-tick"></div>
-                  </div>
-                  <input class="visually-hidden services-input" type="checkbox" name="pool" id="prk-chk" checked>
-                  <label class="services-label" for="prk-chk">Парковка</label>
+                  <label class="control">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="services-label">Парковка</span>
+                    </label>
                 </li>
 
                 <li class="catalog-filter-item">
-                  <div class="ceckbox-cont"  tabindex="0">
-                    <div class="ceckbox"></div>
-                  </div>
-                  <input class="visually-hidden services-input" type="checkbox" name="pool" id="wi-fi">
-                  <label class="services-label" for="wi-fi">Wi-Fi</label>
+                  <label class="control control-last">
+                    <input class="visually-hidden control-input" type="checkbox" name="pool">
+                      <span class="control-mark"></span>
+                      <span class="services-label">Wi-Fi</span>
+                    </label>
                 </li>
               </ul>
             </fieldset>
 
+  <!--Радио кнопки-->
+
             <fieldset class="catalog-filter-group-type">
               <legend class="hotel-filter-tittle-type">Тип жилья:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list-radio">
+
                 <li class="catalog-filter-item">
-                  <div class="ceckbox-cont-dot" tabindex="0">
-                    <div class="ceckbox-dot"></div>
-                  </div>
-                  <input class="visually-hidden housing-input" type="radio" name="pool" id="hotel" checked>
-                  <label class="housing-label" for="hotel">Гостиница</label>
+                  <label class="control-mark-radio control-first">
+                    <input class="visually-hidden radio" type="radio" name="radio-dot" checked>
+                      <span class="fake"></span>
+                      <span class="services-label-radio">Гостиница</span>
+                    </label>
                 </li>
+
                 <li class="catalog-filter-item">
-                  <div class="ceckbox-cont-dot" tabindex="1">
-                    <div class="ceckbox"></div>
-                  </div>
-                  <input class="visually-hidden housing-input" type="radio" name="pool" id="motel">
-                  <label class="housing-label" for="motel">Мотель</label>
+                  <label class="control-mark-radio">
+                    <input class="visually-hidden radio" type="radio" name="radio-dot">
+                      <span class="fake"></span>
+                      <span class="services-label-radio">Мотель</span>
+                    </label>
                 </li>
-                <li class="catalog-filter-item">
-                  <div class="ceckbox-cont-dot" tabindex="1">
-                    <div class="ceckbox"></div>
-                  </div>
-                  <input class="visually-hidden housing-input" type="radio" name="pool" id="apart">
-                  <label class="housing-label" for="apart">Апартаменты</label>
+
+                <li class="catalog-filter-item-last">
+                  <label class="control-mark-radio">
+                    <input class="visually-hidden radio" type="radio" name="radio-dot">
+                      <span class="fake"></span>
+                      <span class="services-label-radio">Апартаменты</span>
+                    </label>
                 </li>
               </ul>
             </fieldset>
@@ -240,12 +247,12 @@
             <fieldset class="filter-range">
               <legend class="filter-range-title">Стоимость, Р:</legend>
               <div class="price-controls">
-                <label class="min-price" tabindex="0">
-                  <input class="min-price-input" type="text" name="min-price" value="0" tabindex="-1">
+                <label class="min-price">
+                  <input class="min-price-input" type="text" name="min-price" value="0">
                   <span class="min">от</span>
                 </label>
-                <label class="max-price" tabindex="0">
-                  <input class="max-price-input" type="text" name="max-price" value="9000" tabindex="-1">
+                <label class="max-price">
+                  <input class="max-price-input" type="text" name="max-price" value="9000">
                   <span class="line"></span>
                   <span class="max">до</span>
                 </label>
@@ -270,14 +277,16 @@
                 <span class="apply">ПРИМЕНИТЬ</span>
                 <span class="visually-hidden">Применить.</span>
               </button>
-              <div class="button-reset" tabindex="0">
-                <a class="reset-button-container" tabindex="1">
-                  <div class="reset" tabindex="1">Сбросить</div>
+              <div class="button-reset">
+                <a class="reset-button-container">
+                  <div class="reset">Сбросить</div>
                 </a>
               </div>
             </div>
           </form>
         </section>
+
+        <main class="main-catalog">
 
         <!--Сортировка отелей-->
 
@@ -293,7 +302,7 @@
 
             <ul class="cards-container">
               <li class="card-cont">
-                  <a href="#" class="cards-icon" tabindex="0">
+                  <a href="#" class="cards-icon">
                     <svg   width="48" height="48" viewbox="0 0 48 48" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <rect x="1" y="1" width="46" height="46" rx="3" />
@@ -308,7 +317,7 @@
               </li>
 
               <li class="card-cont">
-                <a href="#" class="cards-icon" tabindex="0">
+                <a href="#" class="cards-icon">
                   <svg  width="48" height="48" viewbox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect x="1" y="1" width="46" height="46" rx="3" />
@@ -319,7 +328,7 @@
               </li>
 
               <li class="card-cont">
-                <a href="#" class="cards-icon cards-icon-active" tabindex="0">
+                <a href="#" class="cards-icon cards-icon-active">
                   <svg width="48" height="48" viewbox="0 0 48 48"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="1" y="1" width="46" height="46" rx="3" />
@@ -345,14 +354,14 @@
             <h3 class="visually-hidden">Карточка отеля Amara Resort & Spa</h3>
             <ul class="card-image-amara card-image">
               <li>
-                <a href="#" class="hotel-image" tabindex="0">
+                <a href="#" class="hotel-image">
                   <img class="card-item" src="img/photo/amara-hotel.jpg" alt="фото отеля.">
                 </a>
               </li>
             </ul>
             <ul class="card-name">
               <li class="heading-container">
-                <a href="#" class="heading-text item-hover item-active" tabindex="0">Amara Resort & Spa</a>
+                <a href="#" class="heading-text item-hover item-active">Amara Resort & Spa</a>
               </li>
               <li class="amara-description description">
                 <div class="description-text">
@@ -398,14 +407,14 @@
             <h3 class="visually-hidden">Карточка отеля Desert Quail Inn</h3>
             <ul class="card-image-desert card-image">
               <li>
-                <a href="#" class="hotel-image" tabindex="0">
+                <a href="#" class="hotel-image">
                   <img class="card-item" src="img/photo/desert-hotel.jpg" alt="фото отеля.">
                 </a>
               </li>
             </ul>
             <ul class="card-name">
               <li class="heading-container">
-                <a href="#" class="heading-text-desert item-hover item-active" tabindex="0">Desert Quail Inn</a>
+                <a href="#" class="heading-text-desert item-hover item-active">Desert Quail Inn</a>
               </li>
               <li class="desert-description description">
                 <div class="description-text">
@@ -450,14 +459,14 @@
             <h3 class="visually-hidden">Карточка отеля Villas at Poco Diablo</h3>
             <ul class="card-image-villas card-image">
               <li>
-                <a href="#" class="hotel-image" tabindex="0">
+                <a href="#" class="hotel-image">
                   <img class="card-item" src="img/photo/villas-hotel.jpg" alt="фото отеля.">
                 </a>
               </li>
             </ul>
             <ul class="card-name">
               <li class="heading-container">
-                <a href="#" class="heading-text-villas item-hover item-active" tabindex="0">Villas at Poco Diablo</a>
+                <a href="#" class="heading-text-villas item-hover item-active">Villas at Poco Diablo</a>
               </li>
               <li class="villas-description description">
                 <div class="description-text">
@@ -474,7 +483,7 @@
                     <span class="visually-hidden">Подробнее.</span>
                   </span>
                 </button>
-                <button class="button-favourites-green hotel-button" type="button" tabindex="0">
+                <button class="button-favourites-green hotel-button" type="button">
                   <span class="button-favourites-title">
                     <span>В избранном</span>
                     <span class="visually-hidden">В избранное.</span>
@@ -501,14 +510,14 @@
             <h3 class="visually-hidden">Карточка отеля GreenTree Inn</h3>
             <ul class="card-image-green card-image">
               <li>
-                <a href="#" class="hotel-image" tabindex="0">
+                <a href="#" class="hotel-image">
                   <img class="card-item" src="img/photo/greentree-hotel.jpg" alt="фото отеля.">
                 </a>
               </li>
             </ul>
             <ul class="card-name">
               <li class="heading-container">
-                <a href="#" class="heading-text-green item-hover item-active" tabindex="0">GreenTree Inn</a>
+                <a href="#" class="heading-text-green item-hover item-active">GreenTree Inn</a>
               </li>
               <li class="green-description description">
                 <div class="description-text">
@@ -549,7 +558,7 @@
           </div>
 
           <div class="btn-download-container">
-            <button class="button-download" type="submit" tabindex="1">
+            <button class="button-download" type="submit">
               <span class="button-download-more">Загрузить ещё</span>
               <span class="visually-hidden">Загрузить еще.</span>
             </button>
@@ -562,7 +571,7 @@
           <h2 class="visually-hidden">Перелистывание страниц с карточками гостиниц</h2>
           <ul class="pagination-list">
             <li class="pagination-item">
-              <svg class="pag-element-current" tabindex="0" width="55" height="55" viewbox="0 0 55 55" fill="none"
+              <svg class="pag-element-current" width="55" height="55" viewbox="0 0 55 55" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect class="pag-one-bg" width="55" height="55" rx="4" />
                 <path class="pag-one-number"
@@ -570,7 +579,7 @@
               </svg>
             </li>
             <li class="pagination-item">
-              <svg class="pag-element" tabindex="0" width="55" height="55" viewbox="0 0 55 55" fill="none"
+              <svg class="pag-element" width="55" height="55" viewbox="0 0 55 55" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect class="pag-bg" width="55" height="55" rx="4" />
                 <path class="pag-number"
@@ -578,7 +587,7 @@
               </svg>
             </li>
             <li class="pagination-item">
-              <svg class="pag-element" tabindex="0" width="55" height="55" viewbox="0 0 55 55" fill="none"
+              <svg class="pag-element" width="55" height="55" viewbox="0 0 55 55" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect class="pag-bg" width="55" height="55" rx="4" />
                 <path class="pag-number"
@@ -586,7 +595,7 @@
               </svg>
             </li>
             <li class="pagination-item">
-              <svg class="pag-element" tabindex="0" width="55" height="55" viewbox="0 0 55 55" fill="none"
+              <svg class="pag-element"  width="55" height="55" viewbox="0 0 55 55" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect class="pag-bg" width="55" height="55" rx="4" />
                 <path class="pag-number"
@@ -594,7 +603,7 @@
               </svg>
             </li>
             <li class="pagination-item">
-              <svg class="pag-element" tabindex="0" width="55" height="55" viewbox="0 0 55 55" fill="none"
+              <svg class="pag-element"  width="55" height="55" viewbox="0 0 55 55" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect class="pag-bg" width="55" height="55" rx="4" />
                 <path class="pag-number"
@@ -603,7 +612,7 @@
             </li>
 
             <li class="pagination-item">
-              <svg class="pag-element" tabindex="0" width="56" height="55" viewbox="0 0 56 55" fill="none"
+              <svg class="pag-element" width="56" height="55" viewbox="0 0 56 55" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <rect class="pag-bg" width="55" height="55" rx="4" />
                 <path class="pag-number"
@@ -642,7 +651,7 @@
             </div>
           </div>
         </section>
-      </main>
+
 
       <!--Подвал сайта-->
       <footer class="page-footer-catalog">
@@ -690,8 +699,8 @@
               <a class="phone" href="tel:0955414642">+7 (812) 812-12-12</a>
             </div>
 
-            <div class="footer-logo-catalog" tabindex="0">
-              <a href="#" class="logo-cont" tabindex="1">
+            <div class="footer-logo-catalog">
+              <a href="#" class="logo-cont">
                 <svg class="logo" width="115" height="33" viewbox="0 0 115 33" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" />
@@ -723,5 +732,6 @@
           </div>
         </section>
       </footer>
+      </main>
     </body>
   </html>

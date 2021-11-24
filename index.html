@@ -12,31 +12,29 @@
 
       <!--Меню навигации-->
       <header class="page-header">
-
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-main">
-              <a class="navigation-link" href="index.html">Главная</a>
-              <div class="underline"></div>
+              <a class="navigation-item navigation-link" href="index.html">Главная</a>
+              <div class="underline-catalog"></div>
             </li>
             <li class="navigation-item navigation-item-about">
-              <a class="navigation-link" href="about">О Седоне</a>
+              <a class="navigation-item navigation-link" href="about">О Седоне</a>
             </li>
             <li class="navigation-item navigation-item-hotels">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-item navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header-logo" tabindex="0">
-          <a href="#" class="#" tabindex="-1">
+        <div class="header-logo">
+          <a href="#" class="#">
             <img class="logo-header" src="img/logo/logo-of-sedona.png" width="138" height="70" alt="Логотип Седоны.">
           </a>
         </div>
 
         <ul class="nav-icon-list">
-
-          <li class="icon-cont" tabindex="0">
+          <li class="icon-cont">
             <svg class="icon-magnifier" width="18" height="18" viewbox="0 0 18 18" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
@@ -51,7 +49,7 @@
             </svg>
           </li>
 
-          <li class="icont-cont-like" tabindex="0">
+          <li class="icont-cont-like">
             <svg class="icon-heart" width="31" height="27" viewbox="0 0 31 27" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -71,7 +69,7 @@
               <div class="popover-container">
 
                 <!--Карточки отелей-->
-                <div class="block-one-desert" tabindex="0">
+                <div class="block-one-desert">
                   <div class="card-container-desert">
                     <img class="desert-icon-one" src="img/icon/desert-quil-48-48.jpg" alt="Иконка отеля.">
                     <span class="icon-name">Desert Quail Inn</span>
@@ -81,7 +79,7 @@
 
                 <!--Иконки: мусорное ведро-->
 
-                <div class="trash-icon-container-two" tabindex="0">
+                <div class="trash-icon-container-two">
                   <div class="trash-icon">
                     <svg class="trash-icon-svg" width="16" height="16" viewbox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -101,7 +99,7 @@
                   </div>
                 </div>
 
-                <div class="block-one-villas" tabindex="0">
+                <div class="block-one-villas">
                   <div class="card-container-villas">
                     <img class="villas-icon-two" src="img/icon/villas-48-48.jpg" alt="Иконка отеля.">
                     <span class="icon-name-two">Villas at Poco Diablo</span>
@@ -109,7 +107,7 @@
                   </div>
                 </div>
 
-                <div class="trash-icon-container-one" tabindex="0">
+                <div class="trash-icon-container-one">
                   <div class="trash-icon">
                     <svg class="trash-icon-svg" width="16" height="16" viewbox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +124,7 @@
                 </div>
 
                 <!--Кнопка-->
-                <button class="button-in-favorites" tabindex="0" type="button">
+                <button class="button-in-favorites" type="button">
                   <span class="in-favorites">Все избранное</span>
                   <span class="visually-hidden">Кнопка все избранное.</span>
                 </button>
@@ -373,10 +371,10 @@
               <a class="phone" href="tel:0955414642">+7 (812) 812-12-12</a>
             </div>
 
-            <div class="footer-logo" tabindex="0">
-              <a href="#" class="logo-cont" tabindex="1">
+            <div class="footer-logo">
+              <a href="#" class="logo-cont">
                 <svg class="logo" width="115" height="33" viewbox="0 0 115 33" fill="none"
-                  xmlns="http://www.w3.org/2000/svg" tabindex="-1">
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 12.8999V15.4999H2.5V12.8999H0Z" />
                   <path
                     d="M11.6 4.5C10 4.5 8.80002 5.2 8.00002 6.2H7.90002V0H5.90002V15.5H7.90002V10.2C7.90002 8.1 9.20002 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z" />
@@ -413,7 +411,7 @@
         <h2 class="modal-title visually-hidden">Бронирование гостиницы</h2>
         <div class="modal modal-search">
 
-          <button class="modal-close-button" type="button" tabindex="0">
+          <button class="modal-close-button" type="button">
             <svg class="modal-close-cross" width="13" height="13" viewbox="0 0 13 13" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -430,21 +428,19 @@
             </div>
 
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-              <button class="calendar-one" type="button" tabindex="-1">
+              <button class="calendar-one" type="button">
                 <span class="visually-hidden">Открыть календарь.</span>
               </button>
               <p class="field-group">
                 <label class="date arrival-date" for="arrival">Дата заезда:</label>
-                <input class="field-one" type="text" id="arrival" name="arrival" placeholder="27 апреля 2020"
-                  tabindex="0">
+                <input class="field-one" type="text" id="arrival" name="arrival" placeholder="27 апреля 2020">
               </p>
               <span class="service-message-one">Мы не можем отправить вас в прошлое.</span>
 
               <p class="field-group">
                 <label class="date departure-date" for="departure">Дата выезда:</label>
-                <input class="field-two" type="text" id="departure" name="departure" placeholder="1 сентября 2021"
-                  tabindex="0">
-                <button class="calendar-two" type="button" tabindex="-1">
+                <input class="field-two" type="text" id="departure" name="departure" placeholder="1 сентября 2021">
+                <button class="calendar-two" type="button">
                   <span class="visually-hidden">Открыть календарь.</span>
                 </button>
               </p>
@@ -452,7 +448,7 @@
 
               <p class="field-group-adults">
                 <label class="date number-of-adults" for="adult">Взрослые:</label>
-                <button class="minus-one" type="button" tabindex="0">
+                <button class="minus-one" type="button">
                   <svg class="minus-item-one" width="13" height="1" viewbox="0 0 13 1" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 1L13 1V0L0 0Z" />
@@ -460,9 +456,9 @@
                   <span class="visually-hidden">Уменьшение количества.</span>
                 </button>
 
-                <input class="field-three" type="number" id="adult" name="adult" placeholder="2" tabindex="-1">
+                <input class="field-three" type="number" id="adult" name="adult" placeholder="2">
 
-                <button class="plus-one" type="button" tabindex="0">
+                <button class="plus-one" type="button">
                   <svg class="plus-item-one" width="13" height="13" viewbox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
@@ -472,12 +468,12 @@
 
                 <label class="date number-of-children" for="children">Дети:</label>
 
-                <button class="info-button" type="button" tabindex="-1">
+                <button class="info-button" type="button">
                   <span class="visually-hidden">Закрыть</span>
                   <span class="visually-hidden">Закрыть окно.</span>
                 </button>
 
-                <button class="minus-two" type="button" tabindex="0">
+                <button class="minus-two" type="button">
                   <svg class="minus-item-two" width="13" height="1" viewbox="0 0 13 1" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0L0 1L13 1V0L0 0Z" />
@@ -485,7 +481,7 @@
                   <span class="visually-hidden">Уменьшение количества.</span>
                 </button>
 
-                <button class="plus-two" type="button" tabindex="0">
+                <button class="plus-two" type="button">
                   <svg class="plus-item-two" width="13" height="13" viewbox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" />
@@ -493,7 +489,7 @@
                   <span class="visually-hidden">Увеличение количества.</span>
                 </button>
 
-                <input class="field-four" type="number" id="children" name="children" placeholder="1" tabindex="-1">
+                <input class="field-four" type="number" id="children" name="children" placeholder="1">
               </p>
 
 
@@ -510,7 +506,7 @@
                 </div>
               </div>
 
-              <button class="minus-two" type="button" tabindex="0">
+              <button class="minus-two" type="button">
                 <svg class="minus-item-two" width="13" height="1" viewbox="0 0 13 1" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
