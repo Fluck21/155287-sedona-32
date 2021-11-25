@@ -72,18 +72,15 @@
               <div class="popover-container">
 
                 <!--Карточки отелей-->
-                <div class="block-one-desert">
-                  <div class="card-container-desert">
+                  <a href="#" class="block-one-desert">
                     <img class="desert-icon-one" src="img/icon/desert-quil-48-48.jpg" alt="Иконка отеля.">
                     <span class="icon-name">Desert Quail Inn</span>
                     <p class="motel-item">Мотель</p>
-                  </div>
-                </div>
+                  </a>
 
                 <!--Иконки: мусорное ведро-->
 
-                <div class="trash-icon-container-two">
-                  <div class="trash-icon">
+                <a href="#" class="trash-icon-container-two">
                     <svg class="trash-icon-svg" width="16" height="16" viewbox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -99,19 +96,15 @@
                         d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z"
                         fill="black" />
                     </svg>
-                  </div>
-                </div>
+                </a>
 
-                <div class="block-one-villas">
-                  <div class="card-container-villas">
+                <a href="#" class="block-one-villas">
                     <img class="villas-icon-two" src="img/icon/villas-48-48.jpg" alt="Иконка отеля.">
                     <span class="icon-name-two">Villas at Poco Diablo</span>
                     <p class="motel-item-two">Апартаменты</p>
-                  </div>
-                </div>
+                </a>
 
-                <div class="trash-icon-container-one">
-                  <div class="trash-icon">
+                <a href="#" class="trash-icon-container-one">
                     <svg class="trash-icon-svg" width="16" height="16" viewbox="0 0 16 16" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -123,8 +116,7 @@
                       <path
                         d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" />
                     </svg>
-                  </div>
-                </div>
+                  </a>
 
                 <!--Кнопка-->
                 <button class="button-in-favorites" type="button">
@@ -431,9 +423,9 @@
             </div>
 
             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-              <button class="calendar-one" type="button">
+              <span class="calendar-one" type="button" disabled>
                 <span class="visually-hidden">Открыть календарь.</span>
-              </button>
+              </span>
               <p class="field-group">
                 <label class="date arrival-date" for="arrival">Дата заезда:</label>
                 <input class="field-one" type="text" id="arrival" name="arrival" placeholder="27 апреля 2020">
@@ -443,9 +435,9 @@
               <p class="field-group">
                 <label class="date departure-date" for="departure">Дата выезда:</label>
                 <input class="field-two" type="text" id="departure" name="departure" placeholder="1 сентября 2021">
-                <button class="calendar-two" type="button">
+                <span class="calendar-two" type="button">
                   <span class="visually-hidden">Открыть календарь.</span>
-                </button>
+                </span>
               </p>
               <span class="service-message-two">На эти даты есть свободные номера. Пока есть.</span>
 
@@ -459,7 +451,7 @@
                   <span class="visually-hidden">Уменьшение количества.</span>
                 </button>
 
-                <input class="field-three" type="number" id="adult" name="adult" placeholder="2">
+                <input class="field-three" type="number" id="adult" name="adult" placeholder="2" disabled>
 
                 <button class="plus-one" type="button">
                   <svg class="plus-item-one" width="13" height="13" viewbox="0 0 13 13" fill="none"
@@ -471,10 +463,10 @@
 
                 <label class="date number-of-children" for="children">Дети:</label>
 
-                <button class="info-button" type="button">
+                <span class="info-button" type="button">
                   <span class="visually-hidden">Закрыть</span>
                   <span class="visually-hidden">Закрыть окно.</span>
-                </button>
+                </span>
 
                 <button class="minus-two" type="button">
                   <svg class="minus-item-two" width="13" height="1" viewbox="0 0 13 1" fill="none"
@@ -492,7 +484,7 @@
                   <span class="visually-hidden">Увеличение количества.</span>
                 </button>
 
-                <input class="field-four" type="number" id="children" name="children" placeholder="1">
+                <input class="field-four" type="number" id="children" name="children" placeholder="1" disabled>
               </p>
 
 
@@ -509,13 +501,7 @@
                 </div>
               </div>
 
-              <button class="minus-two" type="button">
-                <svg class="minus-item-two" width="13" height="1" viewbox="0 0 13 1" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" />
-                </svg>
-                <span class="visually-hidden">Уменьшение количества.</span>
-              </button>
+
 
               <button class="find-button" type="button">
                 <span class="find">Найти</span>

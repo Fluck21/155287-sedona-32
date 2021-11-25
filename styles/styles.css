@@ -863,14 +863,13 @@ body {
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
-
 }
 
-/*.icon-cont:focus .icon-magnifier {
+.test-icon-mag:focus .icon-magnifier {
   fill: #615048;
 }
-*/
-.icont-cont-like:focus .icon-heart {
+
+.test-icon-mag:focus .icon-heart {
   fill: #615048;
 }
 
@@ -1133,11 +1132,16 @@ body {
   opacity: 0.3;
 }
 
-.icon-heart:hover+.popover {
+.test-icon-mag:hover + .popover {
   display: block;
 }
 
-.icont-cont-like:focus-within .icon-heart+.popover {
+.test-icon-mag:focus-within + .popover {
+  display: block;
+}
+
+
+.popover:focus-within {
   display: block;
 }
 
@@ -1152,6 +1156,11 @@ body {
   box-sizing: border-box;
   border-radius: 10px;
   opacity: 0.6;
+  border: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .block-one-desert:active {
@@ -2037,8 +2046,15 @@ body {
   border-radius: 4px;
 }
 
+
 .control-input:focus + .control-mark {
   outline: 3px solid#83B3D3;
+  border-radius: 4px;
+}
+
+.control-input,
+.control-input:active  + .control-mark {
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
 
@@ -2080,6 +2096,8 @@ body {
   border-radius: 50%;
 }
 
+
+
 /*Фмльтр стоимости */
 
 .filter-range {
@@ -2116,7 +2134,7 @@ body {
 
 .price-controls input {
   width: 140px;
-  min-height: 48px;
+  min-height: 44px;
   border: none;
   background-color: #00000000;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2128,8 +2146,6 @@ body {
 }
 
 .min-price-input {
-  width: 140px;
-  min-height: 48px;
   display: flex;
   flex-wrap: wrap;
   margin-right: 1px;
@@ -2149,8 +2165,6 @@ body {
 }
 
 .max-price-input {
-  width: 140px;
-  min-height: 48px;
   display: flex;
   flex-wrap: wrap;
   margin-left: 1px;
@@ -2192,7 +2206,7 @@ body {
 
 
 .min-price-input:focus {
-  outline: 3px solid #81b3d2ff;
+  outline: 2px solid #81b3d2ff;
   box-sizing: border-box;
   box-shadow: 0 0 0 3px #81b3d2ff;
   border-radius: 3px 0 0 3px;
